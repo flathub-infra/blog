@@ -1,8 +1,8 @@
 ---
-author: 'Bilal Elmoussaoui'
+author: Bilal Elmoussaoui
 date: 2020-01-18
 title: Welcome to Flathub's Blog!
-cover_image: 'images/image1.jpeg'
+tags: [Flathub, Blog]
 draft: false
 ---
 ## Welcome! 
