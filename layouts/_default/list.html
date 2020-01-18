@@ -3,8 +3,7 @@
 <main>
     <ul>
     <!-- Ranges through content/posts/*.md -->
-    {{ range site.Pages }}
-
+	{{ range .Paginator.Pages }}
 		<div class="post-summary">
 			<header>
 				<h3>
@@ -20,5 +19,6 @@
 			</footer>
 		</div>
     {{ end }}
+
 </main>
 {{ end }}
