@@ -84,6 +84,9 @@ article.post header h2 {
   color: #4a86cf;
 }
 @media screen and (max-width: 375px) {
+  article.post {
+    padding: 20px;
+  }
   article.post header h2 {
     font-size: 2rem;
   }
