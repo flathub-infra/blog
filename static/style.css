@@ -207,3 +207,15 @@ code {
   display: block;
   padding: 12px;
 }
+
+
+/* Tags */
+.tags .tag {
+  padding-left: 3px;
+  text-decoration: none;
+  color: #4a86cf;
+  cursor: pointer;
+}
+.tags .tag:hover {
+  text-decoration: underline;
+}
