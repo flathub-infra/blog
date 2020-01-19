@@ -1,9 +1,8 @@
-
 {{ define "main" }}
 <main>
 	<div class="posts">
-    <!-- Ranges through content/posts/*.md -->
-	{{ range .Paginator.Pages }}
+		<!-- Ranges through content/posts/*.md -->
+		{{ range .Paginator.Pages }}
 		<div class="post-summary">
 			<header>
 				<h3>
@@ -11,20 +10,21 @@
 
 				</h3>
 
-			<div class="meta">
+				<div class="meta">
 
-				<span class="pubdate">Published at {{.Date.Format "2006-01-02"}}</span> | <span class="tags">
-					Tags:
-					{{ range $index, $name := .Params.tags }}
-					<a class="tag" href="{{ "/tags/" | relLangURL }}{{ $name | urlize }}" title="View all posts tagged {{ $name }}">#{{ $name }}</a>
-					{{ end }}
-				</span>
-			</div>
+					<span class="pubdate">Published at {{.Date.Format "2006-01-02"}}</span> | <span class="tags">
+						Tags:
+						{{ range $index, $name := .Params.tags }}
+						<a class="tag" href="{{ "/tags/" | relLangURL }}{{ $name | urlize }}"
+							title="View all posts tagged {{ $name }}">#{{ $name }}</a>
+						{{ end }}
+					</span>
+				</div>
 			</header>
 
 			<p>{{.Summary}}</p>
 		</div>
-    {{ end }}
+		{{ end }}
 	</div>
 
 </main>
