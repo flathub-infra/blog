@@ -23,7 +23,6 @@ nav.navbar {
   height: 64px;
   display: flex;
   padding-left: 30px;
-  padding-right: 30px;
   justify-content: space-between;
   box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
 
@@ -46,14 +45,14 @@ nav.navbar ul {
   align-self: center;
 }
 nav.navbar ul li {
+  min-width: 88px;
 }
 
 nav.navbar ul li a {
   color: white;
   text-decoration: none;
   text-transform: uppercase;
-  font-weight: 500;
-  font-size: 0.9rem;
+  font-size: 0.875rem;
   line-height: 36px;
   padding: 10px 14px;
   transition: color 0.2s cubic-bezier(0.35, 0, 0.25, 1), background-color 0.2s cubic-bezier(0.35, 0, 0.25, 1);
