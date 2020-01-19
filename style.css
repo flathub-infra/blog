@@ -20,16 +20,51 @@ main {
 /* Navbar */
 nav.navbar {
   background-color: #4a86cf;
-  height: 60px;
+  height: 64px;
+  display: flex;
+  padding-left: 30px;
+  padding-right: 30px;
+  justify-content: space-between;
   box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+
 }
 nav.navbar .brand-logo {
-  display: inline-block;
-  height: 60px;
+  align-self: center;
+  padding: 4px 14px ;
+  transition: background-color 0.2s cubic-bezier(0.35, 0, 0.25, 1);
 }
-nav.navbar .brand-logo img {
-  transform: translateY(50%);
+nav.navbar .brand-logo:hover {
+  background-color: rgba(0, 0, 0, 0.12);
 }
+
+
+nav.navbar ul {
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+  margin: 14px 0;
+  align-self: center;
+}
+nav.navbar ul li {
+}
+
+nav.navbar ul li a {
+  color: white;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-weight: 500;
+  font-size: 0.9rem;
+  line-height: 36px;
+  padding: 10px 14px;
+  transition: color 0.2s cubic-bezier(0.35, 0, 0.25, 1), background-color 0.2s cubic-bezier(0.35, 0, 0.25, 1);
+
+}
+nav.navbar ul li a:hover {
+  cursor: pointer;
+  color: rgba(255, 255, 255, 0.8);
+  background-color: rgba(0, 0, 0, 0.12);
+}
+
 
 /* Post */
 article.post {
