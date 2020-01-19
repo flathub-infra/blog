@@ -40,7 +40,7 @@ nav.navbar ul {
   margin: 14px 0;
   align-self: center;
 }
-@media screen and (max-width: 375px) {
+@media screen and (max-width: 480px) {
   nav.navbar ul {
     display: none;
   }
