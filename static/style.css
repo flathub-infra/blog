@@ -152,8 +152,11 @@ footer.page-footer {
 }
 @media screen and (max-width: 768px) {
   footer.page-footer {
-    padding-left: 0;
-    padding-right: 0;
+    padding-left: 10%;
+    padding-right: 10%;
+  }
+  footer.page-footer .container {
+    width: 100%;
   }
 }
 
@@ -178,10 +181,17 @@ footer.page-footer div.row {
 }
 @media screen and (max-width: 768px) {
   footer.page-footer div.row {
+    padding-left: 0;
+  }
+}
+@media screen and (max-width: 600px) {
+  footer.page-footer div.row {
     flex-direction: column;
   }
-  footer.page-footer .container {
-    width: 100%;
+}
+@media screen and (max-width: 375px) {
+  footer.page-footer div.row {
+    flex-direction: column;
   }
 }
 
@@ -193,6 +203,12 @@ footer.page-footer div.row ul li {
   width: 180px;
   padding-top: 12px;
   padding-left: 2px;
+}
+
+@media screen and (max-width: 768px) {
+  footer.page-footer div.row ul li {
+    width: 100%;
+  }
 }
 
 footer.page-footer div.row ul li a {
