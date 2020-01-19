@@ -1,8 +1,13 @@
 
   <nav class="navbar">
-    <div class="container">
-      <a href="{{ .Site.BaseURL | relLangURL }}" class="brand-logo">
+    <a href="{{ .Site.BaseURL | relLangURL }}" class="brand-logo">
 	  	<img src="{{ "images/flathub-logo-toolbar.svg" | absURL }}" alt="Flathub Logo"/>
 	  </a>
-    </div>
+
+    <ul>
+      <li><a href="https://flathub.org/apps">Applications</a></li>
+      <li><a href="https://github.com/flathub/flathub/wiki/App-Submission">Publish</a></li>
+      <li><a href="https://flathub.org/about">About</a></li>
+    </ul>
+
   </nav>
