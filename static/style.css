@@ -79,16 +79,21 @@ article.post {
 
 article.post header h2{
   font-size: 2.2rem;
-  line-height: 2;
+  line-height: 1.6em;
   color: #4a86cf;
 }
 
+article.post header .meta {
+  font-size: 0.9rem;
+}
+
+
 article.post p.content {
-  margin-top: 30px;
+  margin-top: 20px;
 }
 
 article.post p {
-  line-height: 1.6rem;
+  line-height: 1.6em;
   margin-top: 12px;
 }
 
@@ -130,7 +135,7 @@ article.post p {
 
 .post-summary p {
   margin-top: 18px;
-  line-height: 1.6;
+  line-height: 1.6em;
 }
 
 /* Footer */
